@@ -16,9 +16,14 @@ namespace git_test
             InitializeComponent();
         }
 
-        private void sayhello(object sender, EventArgs e)
+        private void Sayhello(object sender, EventArgs e)
         {
             notifyIcon1.ShowBalloonTip(1000);
+        }
+
+        private static void Exit(object sender, EventArgs e)
+        {
+            Form1.ActiveForm.Close();
         }
     }
 }
