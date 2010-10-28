@@ -15,5 +15,10 @@ namespace git_test
         {
             InitializeComponent();
         }
+
+        private void sayhello(object sender, EventArgs e)
+        {
+            notifyIcon1.ShowBalloonTip(1000);
+        }
     }
 }
